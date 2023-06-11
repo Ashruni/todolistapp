@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+   <style>
+    #vertical-menu{
+        width: 200px;
+        height: 550px;
+        border-radius:65px;
+        overflow-y: auto;
+      }
+   </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body style="background-color:rgb(234, 215, 233)";>
+    <div style="height:300px;width:400px;background-color:rgb(255, 255, 255);border-radius:20px;margin-left:400px;margin-top:100px;border:1px; border:2px;" class="container" id="vertical-menu">
+       
+            <h1 style="color:rgb(68, 35, 56);margin-left:120px;"> To do List</h1>
+            <div class="row" style="margin-left:70px;" >
+                <!-- <button type="select" >✓</button> -->
+                <input type="text" id="input-data"  placeholder="Create new todo list">
+                <button  onclick="task()" style="background-color:rgb(182, 141, 180);border-color:none;border-radius:5px;font-size:15px;"> create </button>
+                <!-- <button >🗙</button> -->
+            </div>
+            <div>
+             <ul id="unorderedlist">
+                        
+            </ul>
+</div>
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

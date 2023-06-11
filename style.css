@@ -1,0 +1,59 @@
+*
+
+input{
+    
+    padding:10px;
+    border-radius:10px;
+    
+}
+ul li{
+
+    list-style:none;
+    font-size:17px;
+    /* margin-left:80px; */
+    padding: 12px 8px 12px 50px;
+    position: relative;
+    user-select:none;
+    cursor:pointer;
+    
+    
+}
+ul li::before{
+    content: '';
+    position:absolute;
+    color:rgb(184, 10, 10);
+    /* border-radius:50%; */
+    height:20px;
+    width:20px;
+    background-image : url('unchecked.png');
+    background-size:cover;
+    top:12px;
+    left:8px;
+    /* background-position:center; */
+    /* background-color:rgb(227, 213, 213); */
+
+}
+ul li.checked {
+    
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url('tick.png');
+    size:30px;
+    background-size:cover;
+
+}
+ul li span{
+    position:absolute;
+    font-size:17px;
+    color:rgb(74, 0, 0);
+    border-radius:90px;
+    /* background-color: rgb(137, 2, 2); */
+    /* margin-left:90px; */
+    right:0px;
+
+}
+ul li span:hover{
+    background-color:rgb(166, 166, 191);
+}
+
